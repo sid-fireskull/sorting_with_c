@@ -1,4 +1,6 @@
-// Selection Sort using array
+// Sort a array using Selection sort Algorithm
+
+// Author: Siddhartha Sadhukhan
 
 #include<stdio.h>
 

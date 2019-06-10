@@ -22,13 +22,13 @@ int main()
 	
 	for(i=0; i<5;i++)
 	{
-		for(j = 4 ; j > i ; j--)
+		for(j = 5-1 ; j > i ; j--)
 		{
-			if(array[i] > array[j])
+			if(array[j] < array[j-1])
 			{
-				array[j]= array[i] + array[j];
-				array[i] = array[j] - array[i];
-				array[j]= array[j] - array[i];
+				array[j]= array[j-1] + array[j];
+				array[j-1] = array[j] - array[j-1];
+				array[j]= array[j] - array[j-1];
 				flag=true;  
 			}
 		}
